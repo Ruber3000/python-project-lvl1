@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jul 14 11:45:46 2022
+# Make data base, printed on Thu Jul 14 14:14:12 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-0e5d8acd-ac05-4ba4-88d5-cef5a3f39b14.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-b647735b-26ff-442d-9f1f-74bfa23f0f16.sock
 # environment
 LC_NAME = ru_RU.UTF-8
 # environment
@@ -59,7 +59,7 @@ VSCODE_CODE_CACHE_PATH = /home/andrey/.config/Code/CachedData/30d9c6cd9483b2cc58
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1001/.mutter-Xwaylandauth.YPQ0O1
+XAUTHORITY = /run/user/1001/.mutter-Xwaylandauth.INR7O1
 # default
 .LOADED := 
 # default
@@ -97,13 +97,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 16415
+VSCODE_PID = 5347
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/Ruber:@/tmp/.ICE-unix/9271,unix/Ruber:/tmp/.ICE-unix/9271
+SESSION_MANAGER = local/Ruber:@/tmp/.ICE-unix/1295,unix/Ruber:/tmp/.ICE-unix/1295
 # automatic
 *F = $(notdir $*)
 # environment
@@ -147,7 +147,7 @@ LC_MONETARY = ru_RU.UTF-8
 # environment
 LC_TIME = ru_RU.UTF-8
 # environment
-INVOCATION_ID = 45cb47169c724559ae3b97364931aa79
+INVOCATION_ID = 6b900fdc258d496ca2bce76a71eee679
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -179,7 +179,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := install
 # environment
-SYSTEMD_EXEC_PID = 9342
+SYSTEMD_EXEC_PID = 1323
 # environment
 DISPLAY = :0
 # environment
@@ -189,11 +189,11 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 9023
+MANAGERPID = 1148
 # environment
 LC_MEASUREMENT = ru_RU.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 16415
+GIO_LAUNCHED_DESKTOP_FILE_PID = 5347
 # environment
 _ = /usr/share/code/code
 # environment
@@ -201,7 +201,7 @@ LC_PAPER = ru_RU.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1001
 # environment
-JOURNAL_STREAM = 8:95941
+JOURNAL_STREAM = 8:38795
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -258,6 +258,7 @@ brain-games:
 #  recipe to execute (from 'Makefile', line 6):
 	poetry run brain-games
 
+ 
 lint:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -297,7 +298,6 @@ publish:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 18):
- 
 	poetry publish --dry-run
 
 build:
@@ -335,6 +335,6 @@ install:
 # strcache performance: lookups = 37 / hit rate = 29%
 # hash-table stats:
 # Load=26/8192=0%, Rehash=0, Collisions=0/37=0%
-# Finished Make data base on Thu Jul 14 11:45:46 2022
+# Finished Make data base on Thu Jul 14 14:14:12 2022
 
  
