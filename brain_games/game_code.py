@@ -4,7 +4,7 @@ import prompt
 def welcome_user():
     name = prompt.string('- May I have your name? \n- ')
     print(f"- Hello, {name}!")
-    print("- Please, answer \"yes\" if the number is even, otherwise answer \"no\".\n")
+    print("- Answer \"yes\" if the number is even, otherwise answer \"no\".\n")
     answers = [15, 6, 7]
     answers_test = ['no', 'yes', 'no']
     i = 0
