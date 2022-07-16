@@ -4,8 +4,8 @@ print('Welcome to the Brain Games!')
 
 
 def main():
-    from ..games.cli import welcome_user
-    welcome_user()
+    from ..games.calc_cod import game_calc_free
+    game_calc_free()
 
 
 if __name__ == '__main__':
