@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jul 17 00:27:28 2022
+# Make data base, printed on Mon Jul 18 11:42:11 2022
 
 # Variables
 
@@ -23,7 +21,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-51093373-9f49-4e83-b781-0d88a3a2b564.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-099a87ad-555a-4c51-859a-dd627df47d85.sock
 # environment
 LC_NAME = ru_RU.UTF-8
 # environment
@@ -59,7 +57,7 @@ VSCODE_CODE_CACHE_PATH = /home/andrey/.config/Code/CachedData/30d9c6cd9483b2cc58
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1001/.mutter-Xwaylandauth.26RHP1
+XAUTHORITY = /run/user/1001/.mutter-Xwaylandauth.8X8CP1
 # default
 .LOADED := 
 # default
@@ -97,13 +95,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 15211
+VSCODE_PID = 11168
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/Ruber:@/tmp/.ICE-unix/1299,unix/Ruber:/tmp/.ICE-unix/1299
+SESSION_MANAGER = local/Ruber:@/tmp/.ICE-unix/1256,unix/Ruber:/tmp/.ICE-unix/1256
 # automatic
 *F = $(notdir $*)
 # environment
@@ -147,7 +145,7 @@ LC_MONETARY = ru_RU.UTF-8
 # environment
 LC_TIME = ru_RU.UTF-8
 # environment
-INVOCATION_ID = 8274142fcff6491abb48de18fe10e7cf
+INVOCATION_ID = 353f8a3d120448fb8872c3a819e96605
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -179,7 +177,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := install
 # environment
-SYSTEMD_EXEC_PID = 1327
+SYSTEMD_EXEC_PID = 1319
 # environment
 DISPLAY = :0
 # environment
@@ -189,11 +187,11 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 1144
+MANAGERPID = 1105
 # environment
 LC_MEASUREMENT = ru_RU.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 15211
+GIO_LAUNCHED_DESKTOP_FILE_PID = 11168
 # environment
 _ = /usr/share/code/code
 # environment
@@ -201,7 +199,7 @@ LC_PAPER = ru_RU.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1001
 # environment
-JOURNAL_STREAM = 8:41270
+JOURNAL_STREAM = 8:37448
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -237,7 +235,6 @@ LC_IDENTIFICATION = ru_RU.UTF-8
 
 # Pattern-specific Variable Values
 
- 
 # No pattern-specific variable values.
 
 # Directories
@@ -263,13 +260,13 @@ lint:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 30):
+#  recipe to execute (from 'Makefile', line 34):
 	poetry run flake8 brain_games
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-17 00:26:09.868840453
+#  Last modified 2022-07-18 11:40:49.057554249
 #  File has been updated.
 #  Successfully updated.
 
@@ -277,7 +274,7 @@ package-install:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 26):
+#  recipe to execute (from 'Makefile', line 30):
 	python3 -m pip install --user dist/*.whl
 
 # Not a target:
@@ -297,14 +294,17 @@ publish:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 22):
+#  recipe to execute (from 'Makefile', line 26):
 	poetry publish --dry-run
+
+ 
+make: *** No rule to make target 'all'.  Stop.
 
 build:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 18):
+#  recipe to execute (from 'Makefile', line 22):
 	poetry build
 
 brain-even:
@@ -321,6 +321,13 @@ install:
 #  recipe to execute (from 'Makefile', line 2):
 	poetry install
 
+brain-gcd:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 18):
+	poetry run brain-gcd
+
 brain-calc:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -329,19 +336,19 @@ brain-calc:
 	poetry run brain-calc
 
 # files hash-table stats:
-# Load=12/1024=1%, Rehash=0, Collisions=0/22=0%
+# Load=13/1024=1%, Rehash=0, Collisions=0/23=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 27 / storage = 248 B / avg = 9 B
-# current buf: size = 8162 B / used = 248 B / count = 27 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 28 / storage = 258 B / avg = 9 B
+# current buf: size = 8162 B / used = 258 B / count = 28 / avg = 9 B
 
-# strcache performance: lookups = 39 / hit rate = 30%
+# strcache performance: lookups = 41 / hit rate = 31%
 # hash-table stats:
-# Load=27/8192=0%, Rehash=0, Collisions=0/39=0%
-# Finished Make data base on Sun Jul 17 00:27:28 2022
+# Load=28/8192=0%, Rehash=0, Collisions=0/41=0%
+# Finished Make data base on Mon Jul 18 11:42:11 2022
 
  
