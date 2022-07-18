@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 18 11:42:11 2022
+# Make data base, printed on Mon Jul 18 12:45:10 2022
 
 # Variables
 
@@ -21,7 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-099a87ad-555a-4c51-859a-dd627df47d85.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-67327d80-b95e-4157-b2f6-6c8b0854d74b.sock
 # environment
 LC_NAME = ru_RU.UTF-8
 # environment
@@ -95,7 +97,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 11168
+VSCODE_PID = 17018
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -191,7 +193,7 @@ MANAGERPID = 1105
 # environment
 LC_MEASUREMENT = ru_RU.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 11168
+GIO_LAUNCHED_DESKTOP_FILE_PID = 17018
 # environment
 _ = /usr/share/code/code
 # environment
@@ -209,6 +211,7 @@ HOME = /home/andrey
 # environment
 QT_IM_MODULE = ibus
 # environment
+ 
 ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1001/vscode-f7e3f7ef-1.68.1-main.sock
@@ -297,9 +300,6 @@ publish:
 #  recipe to execute (from 'Makefile', line 26):
 	poetry publish --dry-run
 
- 
-make: *** No rule to make target 'all'.  Stop.
-
 build:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -349,6 +349,6 @@ brain-calc:
 # strcache performance: lookups = 41 / hit rate = 31%
 # hash-table stats:
 # Load=28/8192=0%, Rehash=0, Collisions=0/41=0%
-# Finished Make data base on Mon Jul 18 11:42:11 2022
+# Finished Make data base on Mon Jul 18 12:45:10 2022
 
  
