@@ -9,15 +9,15 @@ def game_calc_free():
     znak_list = ['+', '-', '*']
     while i < len(znak_list):
         print("\n- What is the result of the expression?")
-        number1, number2 = random.randrange(1, 50), random.randrange(1, 10)
+        num1, num2 = random.randrange(1, 50), random.randrange(1, 10)
         znak = random.choice(znak_list)
         if znak == '+':
-            answer = number1 + number2
+            answer = num1 + num2
         elif znak == '-':
-            answer = number1 - number2
+            answer = num1 - num2
         else:
-            answer = number1 * number2
-        print(f'- Question: {number1} {znak} {number2}')
+            answer = num1 * num2
+        print(f'- Question: {num1} {znak} {num2}')
         answer_user = prompt.string('- Your answer: ')
         if answer_user == str(answer):
             print('- Correct!')
