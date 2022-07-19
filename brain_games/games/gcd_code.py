@@ -9,8 +9,7 @@ def nod_function():
     i = 0
     while i < 3:
         print("\n- Find the greatest common divisor of given numbers.")
-        number1 = random.randrange(3, 100)
-        number2 = random.randrange(2, 100)
+        number1, number2 = random.randrange(3, 100), random.randrange(2, 100)
         answer = math.gcd(number1, number2)
         print(f'- Question: {number1} {number2}')
         answer_user = prompt.string('- Your answer: ')
@@ -18,7 +17,9 @@ def nod_function():
             print('- Correct!')
             i += 1
         else:
-            print(f"\n- '{answer_user}' is wrong answer ;(. Correct answer was '{answer}'.")
+            print(
+                f"\n- '{answer_user}' is wrong answer ;(. "
+                "Correct answer was '{answer}'.")
             i = 4
             break
     if i == 3:

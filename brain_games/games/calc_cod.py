@@ -9,8 +9,7 @@ def game_calc_free():
     znak_list = ['+', '-', '*']
     while i < len(znak_list):
         print("\n- What is the result of the expression?")
-        number1 = random.randrange(1, 50)
-        number2 = random.randrange(1, 10)
+        number1, number2 = random.randrange(1, 50), random.randrange(1, 10)
         znak = random.choice(znak_list)
         if znak == '+':
             answer = number1 + number2
@@ -24,7 +23,9 @@ def game_calc_free():
             print('- Correct!')
             i += 1
         else:
-            print(f"\n- '{answer_user}' is wrong answer ;(. Correct answer was '{answer}'.")
+            print(
+                f"\n- '{answer_user}' is wrong answer ;(. "
+                "Correct answer was '{answer}'.")
             i = i + len(znak_list) + 1
             break
     if i == len(znak_list):

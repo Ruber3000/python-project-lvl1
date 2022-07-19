@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 18 12:45:10 2022
+# Make data base, printed on Tue Jul 19 10:53:23 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-67327d80-b95e-4157-b2f6-6c8b0854d74b.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-9ae5b21c-9e35-4e91-84d3-153ff42a23ba.sock
 # environment
 LC_NAME = ru_RU.UTF-8
 # environment
@@ -59,7 +59,7 @@ VSCODE_CODE_CACHE_PATH = /home/andrey/.config/Code/CachedData/30d9c6cd9483b2cc58
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1001/.mutter-Xwaylandauth.8X8CP1
+XAUTHORITY = /run/user/1001/.mutter-Xwaylandauth.XX8AP1
 # default
 .LOADED := 
 # default
@@ -97,13 +97,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 17018
+VSCODE_PID = 2069
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/Ruber:@/tmp/.ICE-unix/1256,unix/Ruber:/tmp/.ICE-unix/1256
+SESSION_MANAGER = local/Ruber:@/tmp/.ICE-unix/1313,unix/Ruber:/tmp/.ICE-unix/1313
 # automatic
 *F = $(notdir $*)
 # environment
@@ -147,7 +147,7 @@ LC_MONETARY = ru_RU.UTF-8
 # environment
 LC_TIME = ru_RU.UTF-8
 # environment
-INVOCATION_ID = 353f8a3d120448fb8872c3a819e96605
+INVOCATION_ID = 0b42a5bf60ac492f8c1e328bfa5222fb
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -179,7 +179,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := install
 # environment
-SYSTEMD_EXEC_PID = 1319
+SYSTEMD_EXEC_PID = 1341
 # environment
 DISPLAY = :0
 # environment
@@ -189,11 +189,11 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 1105
+MANAGERPID = 1168
 # environment
 LC_MEASUREMENT = ru_RU.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 17018
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2069
 # environment
 _ = /usr/share/code/code
 # environment
@@ -201,7 +201,7 @@ LC_PAPER = ru_RU.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1001
 # environment
-JOURNAL_STREAM = 8:37448
+JOURNAL_STREAM = 8:20391
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -211,7 +211,6 @@ HOME = /home/andrey
 # environment
 QT_IM_MODULE = ibus
 # environment
- 
 ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1001/vscode-f7e3f7ef-1.68.1-main.sock
@@ -293,6 +292,7 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
+ 
 publish:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -349,6 +349,6 @@ brain-calc:
 # strcache performance: lookups = 41 / hit rate = 31%
 # hash-table stats:
 # Load=28/8192=0%, Rehash=0, Collisions=0/41=0%
-# Finished Make data base on Mon Jul 18 12:45:10 2022
+# Finished Make data base on Tue Jul 19 10:53:23 2022
 
  

@@ -21,5 +21,7 @@ def welcome_user():
     if i == len(answers_test):
         print(f'- Congratulations, {name}!')
     else:
-        print(f"\n- '{answer_user}' is wrong answer ;(. Correct answer was '{answers_test[i]}'.")
+        print(
+            f"\n- '{answer_user}' is wrong answer ;(. "
+            "Correct answer was '{answers_test[i]}'.")
         print(f"- Let's try again, {name}!")
