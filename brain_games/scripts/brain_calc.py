@@ -4,7 +4,7 @@ print('Welcome to the Brain Games!')
 
 
 def main():
-    from ..games.calc_cod import game_calc_free
+    from ..games.calc_code import game_calc_free
     game_calc_free()
 
 
