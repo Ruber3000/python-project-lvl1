@@ -14,3 +14,6 @@ https://asciinema.org/a/q8HnZcIs85jYpz5RTw7f7kwwW
 
 # link to asciinema brain-games step 7
 https://asciinema.org/a/N9esVROI07PSo8tmusxW4tJY4
+
+# link to asciinema brain-games step 8
+https://asciinema.org/a/IskM3yWT6GDiTcXiPPkTduueQ
