@@ -19,7 +19,7 @@ def nod_function():
         else:
             print(
                 f"\n- '{answer_user}' is wrong answer ;(. "
-                "Correct answer was '{answer}'.")
+                f"Correct answer was '{answer}'.")
             i = 4
             break
     if i == 3:

@@ -25,7 +25,7 @@ def game_calc_free():
         else:
             print(
                 f"\n- '{answer_user}' is wrong answer ;(. "
-                "Correct answer was '{answer}'.")
+                f"Correct answer was '{answer}'.")
             i = i + len(znak_list) + 1
             break
     if i == len(znak_list):

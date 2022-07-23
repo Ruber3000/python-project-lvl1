@@ -1,9 +1,8 @@
 import prompt
 import random
-# import math
 
 
-def progress_gange():
+def progress_range():
     name = prompt.string('- May I have your name? \n- ')
     print(f"- Hello, {name}!")
     i = 0
@@ -14,20 +13,12 @@ def progress_gange():
         num_lenght = random.randrange(6, 10)
         num_finish = num_step * num_lenght + num_start
         list_num = list(range(num_start, num_finish, num_step))
-
-        //////////////////
-        print(
-            num_start, num_finish, num_step, num_lenght, list_num)
-        i = 5
-
-
-
-
-
-        '''
-        number1, number2 = random.randrange(3, 100), random.randrange(2, 100)
-        answer = math.gcd(number1, number2)
-        print(f'- Question: {number1} {number2}')
+        hide_num = random.randrange(2, len(list_num))
+        answer = (list_num[hide_num - 1])
+        list_num_hide1 = " ".join([str(_) for _ in list_num[: hide_num - 1]])
+        list_num_hide3 = " ".join([str(_) for _ in list_num[hide_num:]])
+        list_num_hide = list_num_hide1 + " .. " + list_num_hide3
+        print(f'Question: {list_num_hide}')
         answer_user = prompt.string('- Your answer: ')
         if answer_user == str(answer):
             print('- Correct!')
@@ -35,11 +26,10 @@ def progress_gange():
         else:
             print(
                 f"\n- '{answer_user}' is wrong answer ;(. "
-                "Correct answer was '{answer}'.")
+                f"Correct answer was '{answer}'.")
             i = 4
             break
-    if i == 3:
-        print(f'\n- Congratulations, {name}!')
-    else:
-        print(f"- Let's try again, {name}!")
-'''
+        if i == 3:
+            print(f'\n- Congratulations, {name}!')
+        else:
+            print(f"- Let's try again, {name}!")
