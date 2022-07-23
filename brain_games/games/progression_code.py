@@ -29,7 +29,7 @@ def progress_range():
                 f"Correct answer was '{answer}'.")
             i = 4
             break
-        if i == 3:
-            print(f'\n- Congratulations, {name}!')
-        else:
-            print(f"- Let's try again, {name}!")
+    if i == 3:
+        print(f'\n- Congratulations, {name}!')
+    else:
+        print(f"- Let's try again, {name}!")
