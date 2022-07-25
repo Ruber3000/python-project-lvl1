@@ -20,6 +20,7 @@ def progress_range():
         list_num_hide = list_num_hide1 + " .. " + list_num_hide3
         print(f'Question: {list_num_hide}')
         answer_user = prompt.string('- Your answer: ')
+        answer_user = answer_user.strip()
         if answer_user == str(answer):
             print('- Correct!')
             i += 1
