@@ -3,11 +3,12 @@ import random
 
 
 def progress_range():
-    name = prompt.string('- May I have your name? \n- ')
-    print(f"- Hello, {name}!")
+    from brain_games.games.other_files.game_logics import ask_name
+    name = ask_name()
+    print("\n- What number is missing in the progression?")
+    game_rounds = 3
     i = 0
-    while i < 3:
-        print("\n- What number is missing in the progression?")
+    while i < game_rounds:
         num_start = random.randrange(2, 10)
         num_step = random.randrange(3, 8)
         num_lenght = random.randrange(6, 10)
@@ -22,15 +23,14 @@ def progress_range():
         answer_user = prompt.string('- Your answer: ')
         answer_user = answer_user.strip()
         if answer_user == str(answer):
-            print('- Correct!')
+            print('- Correct!\n')
             i += 1
         else:
             print(
                 f"\n- '{answer_user}' is wrong answer ;(. "
                 f"Correct answer was '{answer}'.")
-            i = 4
+            i = game_rounds + 1
             break
-    if i == 3:
-        print(f'\n- Congratulations, {name}!')
-    else:
-        print(f"- Let's try again, {name}!")
+
+    from brain_games.games.other_files.game_logics import finish_game
+    finish_game(i, game_rounds, name)

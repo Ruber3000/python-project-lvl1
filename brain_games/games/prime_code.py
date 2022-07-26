@@ -2,24 +2,19 @@ import prompt
 import random
 
 
-def prime_test(num):
-    for i in range(2, (num // 2) + 1):
-        if num % i == 0:
-            return False
-    return True
-
-
 def prime_try_find():
-    name = prompt.string('- May I have your name? \n- ')
-    print(f"- Hello, {name}!")
+    from brain_games.games.other_files.game_logics import ask_name
+    name = ask_name()
     print(
         "\n- Answer \"yes\" if given number is prime. Otherwise answer \"no\".")
+    game_rounds = 3
     i = 0
-    while i < 3:
+    while i < game_rounds:
         num = random.randrange(1, 100)
         print(f'- Question: {num}')
         answer_user = prompt.string('- Your answer: ')
         answer_user = answer_user.strip().lower()
+        from brain_games.games.other_files.game_logics import prime_test
         answer_test = prime_test(num)
         answer = 'yes' if answer_test is True else 'no'
         if answer == answer_user:
@@ -29,8 +24,7 @@ def prime_try_find():
             print(
                 f"\n- '{answer_user}' is wrong answer ;(. "
                 f"Correct answer was '{answer}'.")
-            i = 4
-    if i == 3:
-        print(f'- Congratulations, {name}!')
-    else:
-        print(f"- Let's try again, {name}!")
+            i = game_rounds + 1
+
+    from brain_games.games.other_files.game_logics import finish_game
+    finish_game(i, game_rounds, name)

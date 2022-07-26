@@ -3,11 +3,12 @@ import random
 
 
 def even_find():
-    name = prompt.string('- May I have your name? \n- ')
-    print(f"- Hello, {name}!")
+    from brain_games.games.other_files.game_logics import ask_name
+    name = ask_name()
     print("\n- Answer \"yes\" if the number is even, otherwise answer \"no\".")
+    game_rounds = 3
     i = 0
-    while i < 3:
+    while i < game_rounds:
         num = random.randrange(10, 100)
         answer = 'yes' if num % 2 == 0 else 'no'
         print(f'- Question: {num}')
@@ -20,8 +21,7 @@ def even_find():
             print(
                 f"\n- '{answer_user}' is wrong answer ;(. "
                 f"Correct answer was '{answer}'.")
-            i = 4
-    if i == 3:
-        print(f'- Congratulations, {name}!')
-    else:
-        print(f"- Let's try again, {name}!")
+            i = game_rounds + 1
+
+    from brain_games.games.other_files.game_logics import finish_game
+    finish_game(i, game_rounds, name)

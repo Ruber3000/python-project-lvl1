@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 25 21:07:35 2022
+# Make data base, printed on Mon Jul 25 22:39:41 2022
 
 # Variables
 
@@ -87,7 +89,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 20385
+VSCODE_PID = 33664
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -181,7 +183,7 @@ MANAGERPID = 1155
 # environment
 LC_MEASUREMENT = ru_RU.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 20385
+GIO_LAUNCHED_DESKTOP_FILE_PID = 33664
 # environment
 _ = /usr/share/code/code
 # environment
@@ -285,9 +287,6 @@ publish:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 34):
- 
-make: *** No rule to make target 'all'.  Stop.
-
 	poetry publish --dry-run
 
 build:
@@ -301,6 +300,7 @@ brain-progression:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  recipe to execute (from 'Makefile', line 26):
 	poetry run brain-progression
 
@@ -353,6 +353,6 @@ brain-calc:
 # strcache performance: lookups = 45 / hit rate = 33%
 # hash-table stats:
 # Load=30/8192=0%, Rehash=0, Collisions=0/45=0%
-# Finished Make data base on Mon Jul 25 21:07:35 2022
+# Finished Make data base on Mon Jul 25 22:39:41 2022
 
  

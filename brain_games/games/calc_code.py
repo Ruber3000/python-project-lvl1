@@ -3,12 +3,13 @@ import random
 
 
 def game_calc_free():
-    name = prompt.string('- May I have your name? \n- ')
-    print(f"- Hello, {name}!")
+    from brain_games.games.other_files.game_logics import ask_name
+    name = ask_name()
+    print("\n- What is the result of the expression?")
     znak_list = ['+', '-', '*']
+    game_rounds = 3
     i = 0
-    while i < 3:
-        print("\n- What is the result of the expression?")
+    while i < game_rounds:
         num1, num2 = random.randrange(1, 50), random.randrange(1, 10)
         znak = random.choice(znak_list)
         if znak == '+':
@@ -21,15 +22,14 @@ def game_calc_free():
         answer_user = prompt.string('- Your answer: ')
         answer_user = answer_user.strip()
         if answer_user == str(answer):
-            print('- Correct!')
+            print('- Correct!\n')
             i += 1
         else:
             print(
                 f"\n- '{answer_user}' is wrong answer ;(. "
                 f"Correct answer was '{answer}'.")
-            i = 5
+            i = game_rounds + 1
             break
-    if i == 3:
-        print(f'\n- Congratulations, {name}!')
-    else:
-        print(f"- Let's try again, {name}!")
+
+    from brain_games.games.other_files.game_logics import finish_game
+    finish_game(i, game_rounds, name)
