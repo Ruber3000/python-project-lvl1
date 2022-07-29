@@ -4,7 +4,7 @@ print('Welcome to the Brain Games!')
 
 
 def main():
-    from ..games.gcd_code import nod_function
+    from ..games.gcd import nod_function
     nod_function()
 
 

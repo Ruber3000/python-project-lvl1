@@ -4,7 +4,7 @@ print('Welcome to the Brain Games!')
 
 
 def main():
-    from ..games.even_code import even_find
+    from ..games.even import even_find
     even_find()
 
 

@@ -3,12 +3,12 @@
 def ask_name():
     import prompt
     name = prompt.string('- May I have your name? \n- ')
-    print(f"- Hello, {name}!")
+    print(f'- Hello, {name}!')
     return(name)
 
 
-def finish_game(i, game_rounds, name):
-    if i == game_rounds:
+def finish_game(i, game_count, name):
+    if i == game_count:
         print(f'- Congratulations, {name}!')
     else:
         print(f"- Let's try again, {name}!")

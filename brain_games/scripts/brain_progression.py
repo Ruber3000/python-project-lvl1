@@ -4,7 +4,7 @@ print('Welcome to the Brain Games!')
 
 
 def main():
-    from ..games.progression_code import progress_range
+    from ..games.progression import progress_range
     progress_range()
 
 
