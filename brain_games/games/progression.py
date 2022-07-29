@@ -1,9 +1,9 @@
-import prompt
 import random
+from brain_games.games.other_files.game_logics import answer_from_user, ask_name
+from brain_games.games.other_files.game_logics import check_answer, finish_game
 
 
 def progress_range():
-    from brain_games.games.other_files.game_logics import ask_name
     name = ask_name()
     print('\n- What number is missing in the progression?')
     game_count = 3
@@ -20,17 +20,6 @@ def progress_range():
         list_num_hide3 = " ".join([str(_) for _ in list_num[hide_num:]])
         list_num_hide = list_num_hide1 + " .. " + list_num_hide3
         print(f'Question: {list_num_hide}')
-        answer_user = prompt.string('- Your answer: ')
-        answer_user = answer_user.strip()
-        if answer_user == str(answer):
-            print('- Correct!\n')
-            i += 1
-        else:
-            print(
-                f'\n- {answer_user} is wrong answer ;(. '
-                f'Correct answer was {answer}.')
-            i = game_count + 1
-            break
-
-    from brain_games.games.other_files.game_logics import finish_game
+        answer_user = answer_from_user()
+        i = check_answer(answer_user, answer, i, game_count)
     finish_game(i, game_count, name)
