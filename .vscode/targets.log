@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jul 30 10:50:44 2022
+# Make data base, printed on Sat Jul 30 20:16:47 2022
 
 # Variables
 
@@ -53,7 +55,7 @@ VSCODE_CODE_CACHE_PATH = /home/andrey/.config/Code/CachedData/b06ae3b2d2dbfe28bc
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1001/.mutter-Xwaylandauth.P128P1
+XAUTHORITY = /run/user/1001/.mutter-Xwaylandauth.F26XP1
 # default
 .LOADED := 
 # default
@@ -87,13 +89,13 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 2016
+VSCODE_PID = 3986
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/Ruber:@/tmp/.ICE-unix/1300,unix/Ruber:/tmp/.ICE-unix/1300
+SESSION_MANAGER = local/Ruber:@/tmp/.ICE-unix/1288,unix/Ruber:/tmp/.ICE-unix/1288
 # automatic
 *F = $(notdir $*)
 # environment
@@ -137,7 +139,7 @@ LC_MONETARY = ru_RU.UTF-8
 # environment
 LC_TIME = ru_RU.UTF-8
 # environment
-INVOCATION_ID = 48efe6ea4c754b68ba27f2908f2bc23e
+INVOCATION_ID = 6cbe7c11a6d444cdb982623858040de0
 # environment
 USERNAME = andrey
 # environment
@@ -167,7 +169,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := install
 # environment
-SYSTEMD_EXEC_PID = 1326
+SYSTEMD_EXEC_PID = 1346
 # environment
 DISPLAY = :0
 # environment
@@ -177,11 +179,11 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 1173
+MANAGERPID = 1165
 # environment
 LC_MEASUREMENT = ru_RU.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2016
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3986
 # environment
 _ = /usr/share/code/code
 # environment
@@ -189,7 +191,7 @@ LC_PAPER = ru_RU.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1001
 # environment
-JOURNAL_STREAM = 8:43014
+JOURNAL_STREAM = 8:33175
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -296,9 +298,6 @@ build:
 
 brain-progression:
 #  Implicit rule search has not been done.
- 
-make: *** No rule to make target 'all'.  Stop.
-
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 26):
@@ -353,6 +352,6 @@ brain-calc:
 # strcache performance: lookups = 45 / hit rate = 33%
 # hash-table stats:
 # Load=30/8192=0%, Rehash=0, Collisions=0/45=0%
-# Finished Make data base on Sat Jul 30 10:50:44 2022
+# Finished Make data base on Sat Jul 30 20:16:47 2022
 
  

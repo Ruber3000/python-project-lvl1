@@ -1,1 +1,1 @@
-{"buildTargets":["brain-calc","brain-even","brain-games","brain-gcd","brain-prime","brain-progression","build","install","lint","make","package-install","publish"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
+{"buildTargets":["brain-calc","brain-even","brain-games","brain-gcd","brain-prime","brain-progression","build","install","lint","package-install","publish"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
