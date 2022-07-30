@@ -20,7 +20,8 @@ def check_answer(answer_user, answer, i, game_count):
         print('- Correct!\n')
         i += 1
     else:
-        print(f'\n- {answer_user} is wrong answer ;(. '
+        print(
+            f'\n- {answer_user} is wrong answer ;(. '
             f'Correct answer was {answer}.')
         i = game_count + 1
     return i
@@ -31,10 +32,3 @@ def finish_game(i, game_count, name):
         print(f'- Congratulations, {name}!')
     else:
         print(f'- Let\'s try again, {name}!')
-
-
-def prime_test(num):
-    for i in range(2, (num // 2) + 1):
-        if num % i == 0:
-            return False
-    return True

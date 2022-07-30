@@ -1,7 +1,7 @@
 import random
 from brain_games.games.other_files.game_logics import answer_from_user, ask_name
 from brain_games.games.other_files.game_logics import check_answer, finish_game
-from brain_games.games.other_files.game_logics import prime_test
+from brain_games.games.other_files.my_function import prime_test
 
 
 def prime_try_find():
