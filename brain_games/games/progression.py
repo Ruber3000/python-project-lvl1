@@ -1,17 +1,20 @@
 import random
-from brain_games.games.other_files.game_logics import answer_from_user, ask_name
-from brain_games.games.other_files.game_logics import check_answer, finish_game
+from brain_games.game_function.game_logics import answer_from_user, ask_name
+from brain_games.game_function.game_logics import check_answer, finish_game
 
 
 def progress_range():
     name = ask_name()
-    print('\n- What number is missing in the progression?')
+    print('\nWhat number is missing in the progression?')
     game_count = 3
+    num_start_min, num_start_max = 2, 10
+    num_step_min, num_step_max = 3, 8
+    num_lenght_min, num_lenght_max = 6, 10
     i = 0
     while i < game_count:
-        num_start = random.randrange(2, 10)
-        num_step = random.randrange(3, 8)
-        num_lenght = random.randrange(6, 10)
+        num_start = random.randrange(num_start_min, num_start_max)
+        num_step = random.randrange(num_step_min, num_start_max)
+        num_lenght = random.randrange(num_lenght_min, num_lenght_max)
         num_finish = num_step * num_lenght + num_start
         list_num = list(range(num_start, num_finish, num_step))
         hide_num = random.randrange(2, len(list_num))

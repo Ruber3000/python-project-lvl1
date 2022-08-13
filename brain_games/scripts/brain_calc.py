@@ -1,10 +1,12 @@
 #!/usr/bin/env python
+from brain_games.games.calc import game_calc_free
+from brain_games.game_function.game_logics import word_welcome
 
-print('Welcome to the Brain Games!')
+
+word_welcome()
 
 
 def main():
-    from ..games.calc import game_calc_free
     game_calc_free()
 
 

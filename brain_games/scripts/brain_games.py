@@ -1,10 +1,11 @@
 #!/usr/bin/env python
+from brain_games.games.cli import welcome_user
+from brain_games.game_function.game_logics import word_welcome
 
-print('Welcome to the Brain Games!')
 
+word_welcome()
 
 def main():
-    from ..games.cli import welcome_user
     welcome_user()
 
 

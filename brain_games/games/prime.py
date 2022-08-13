@@ -1,20 +1,21 @@
 import random
-from brain_games.games.other_files.game_logics import answer_from_user, ask_name
+from brain_games.game_function.game_logics import answer_from_user, ask_name
 from brain_games.games.other_files.game_logics import check_answer, finish_game
-from brain_games.games.other_files.my_function import prime_test
+from brain_games.game_function.my_function import prime_test
 
 
 def prime_try_find():
     name = ask_name()
     print(
-        '\n- Answer \"yes\" if given number is prime. Otherwise answer \"no\".')
+        '\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".')
     game_count = 3
+    num_min, num_max = 1, 100
     i = 0
     while i < game_count:
-        num = random.randrange(1, 100)
+        num = random.randrange(num_min, num_max)
         answer_test = prime_test(num)
         answer = 'yes' if answer_test is True else 'no'
-        print(f'- Question: {num}')
+        print(f'Question: {num}')
         answer_user = answer_from_user()
         i = check_answer(answer_user, answer, i, game_count)
 
