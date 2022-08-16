@@ -5,6 +5,7 @@ from brain_games.game_function.game_logics import word_welcome
 
 word_welcome()
 
+
 def main():
     welcome_user()
 

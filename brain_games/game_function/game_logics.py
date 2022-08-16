@@ -14,7 +14,7 @@ def ask_name():
 
 def answer_from_user():
     answer_user = prompt.string('Your answer: ')
-    answer_user = answer_user.strip()
+    answer_user = answer_user.strip().lower()
     return answer_user
 
 

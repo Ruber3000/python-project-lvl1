@@ -12,13 +12,14 @@ def game_calc_free():
     game_count = 3
     i = 0
     while i < game_count:
-        num1, num2 = random.randrange(num1_min, num1_max), random.randrange(num2_min, num2_max)
+        num1 = random.randrange(num1_min, num1_max)
+        num2 = random.randrange(num2_min, num2_max)
         math_operation = random.choice(math_operation)
         if math_operation == '+':
             answer = num1 + num2
         elif math_operation == '-':
             answer = num1 - num2
-        else:
+        elif math_operation == '*':
             answer = num1 * num2
         print(f'Question: {num1} {math_operation} {num2}')
         answer_user = answer_from_user()

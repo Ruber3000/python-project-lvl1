@@ -13,7 +13,7 @@ def progress_range():
     i = 0
     while i < game_count:
         num_start = random.randrange(num_start_min, num_start_max)
-        num_step = random.randrange(num_step_min, num_start_max)
+        num_step = random.randrange(num_step_min, num_step_max)
         num_lenght = random.randrange(num_lenght_min, num_lenght_max)
         num_finish = num_step * num_lenght + num_start
         list_num = list(range(num_start, num_finish, num_step))
