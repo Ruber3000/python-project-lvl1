@@ -5,19 +5,19 @@
 <a href="https://codeclimate.com/github/Ruber3000/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/3dc6215b3eb88d117e1c/maintainability" /></a>
 
 # link to asciinema brain-games step 5 // number is even
-https://asciinema.org/a/zpLaqFLxXi1El1poiwdrFCO82
+https://asciinema.org/a/TFRwPvY9zZIPJFkqXocAlf2me
 
 # link to asciinema brain-games step 6 // calc numbers
-https://asciinema.org/a/57jSeD7DNY5cspY86EEZLKLfP
+https://asciinema.org/a/4dCNsWKfg2NtRIywbvoMiLrDA
 
 # link to asciinema brain-games step 7 // gcd
-https://asciinema.org/a/GaidqAQHHyU0eGO8oMPuuty7G
+https://asciinema.org/a/6kH4uT4LTub4RA51rp05ymJOZ
 
 # link to asciinema brain-games step 8 // progression
-https://asciinema.org/a/BRVpqU2KN6zyxOOd9D41KfO4L
+https://asciinema.org/a/ZDbfvOOhaJk9EmhlLp1mjMI9j
 
 # link to asciinema brain-games step 9 // prime
-https://asciinema.org/a/FWlTvR6fqAJcva6YoMBAHBXpu
+https://asciinema.org/a/30MVu2gNwThkuBLBLd0v5CGKG
 
 
 # Instructions #
