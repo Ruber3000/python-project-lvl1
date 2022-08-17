@@ -14,14 +14,14 @@ def game_calc_free():
     while i < game_count:
         num1 = random.randrange(num1_min, num1_max)
         num2 = random.randrange(num2_min, num2_max)
-        math_operation = random.choice(math_operation)
-        if math_operation == '+':
+        math_operation_choice = random.choice(math_operation)
+        if math_operation_choice == '+':
             answer = num1 + num2
-        elif math_operation == '-':
+        elif math_operation_choice == '-':
             answer = num1 - num2
-        elif math_operation == '*':
+        elif math_operation_choice == '*':
             answer = num1 * num2
-        print(f'Question: {num1} {math_operation} {num2}')
+        print(f'Question: {num1} {math_operation_choice} {num2}')
         answer_user = answer_from_user()
         i = is_check_answer(answer_user, answer, i, game_count)
     is_finish_game(i, game_count, name)
