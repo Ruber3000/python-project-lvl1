@@ -1,6 +1,7 @@
 import random
 from brain_games.game_function.game_logics import answer_from_user, ask_name
-from brain_games.game_function.game_logics import check_answer, finish_game
+from brain_games.game_function.game_logics import is_check_answer
+from brain_games.game_function.game_logics import is_finish_game
 
 
 def progress_range():
@@ -19,10 +20,10 @@ def progress_range():
         list_num = list(range(num_start, num_finish, num_step))
         hide_num = random.randrange(2, len(list_num))
         answer = (list_num[hide_num - 1])
-        list_num_hide1 = " ".join([str(_) for _ in list_num[: hide_num - 1]])
-        list_num_hide3 = " ".join([str(_) for _ in list_num[hide_num:]])
-        list_num_hide = list_num_hide1 + " .. " + list_num_hide3
+        list_num_hide1 = ' '.join([str(_) for _ in list_num[: hide_num - 1]])
+        list_num_hide3 = ' '.join([str(_) for _ in list_num[hide_num:]])
+        list_num_hide = list_num_hide1 + ' .. ' + list_num_hide3
         print(f'Question: {list_num_hide}')
         answer_user = answer_from_user()
-        i = check_answer(answer_user, answer, i, game_count)
-    finish_game(i, game_count, name)
+        i = is_check_answer(answer_user, answer, i, game_count)
+    is_finish_game(i, game_count, name)

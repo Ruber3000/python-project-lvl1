@@ -1,7 +1,8 @@
 import random
 import math
 from brain_games.game_function.game_logics import answer_from_user, ask_name
-from brain_games.game_function.game_logics import check_answer, finish_game
+from brain_games.game_function.game_logics import is_check_answer
+from brain_games.game_function.game_logics import is_finish_game
 
 
 def nod_function():
@@ -14,5 +15,5 @@ def nod_function():
         answer = math.gcd(num1, num2)
         print(f'Question: {num1} {num2}')
         answer_user = answer_from_user()
-        i = check_answer(answer_user, answer, i, game_count)
-    finish_game(i, game_count, name)
+        i = is_check_answer(answer_user, answer, i, game_count)
+    is_finish_game(i, game_count, name)

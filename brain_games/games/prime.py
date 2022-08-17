@@ -1,6 +1,7 @@
 import random
 from brain_games.game_function.game_logics import answer_from_user, ask_name
-from brain_games.game_function.game_logics import check_answer, finish_game
+from brain_games.game_function.game_logics import is_check_answer
+from brain_games.game_function.game_logics import is_finish_game
 from brain_games.game_function.my_function import is_prime_test
 
 
@@ -17,5 +18,5 @@ def prime_try_find():
         answer = 'yes' if answer_test is True else 'no'
         print(f'Question: {num}')
         answer_user = answer_from_user()
-        i = check_answer(answer_user, answer, i, game_count)
-    finish_game(i, game_count, name)
+        i = is_check_answer(answer_user, answer, i, game_count)
+    is_finish_game(i, game_count, name)

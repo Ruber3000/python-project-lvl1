@@ -18,7 +18,7 @@ def answer_from_user():
     return answer_user
 
 
-def check_answer(answer_user, answer, i, game_count):
+def is_check_answer(answer_user, answer, i, game_count):
     if str(answer_user) == str(answer):
         print('Correct!\n')
         i += 1
@@ -30,7 +30,7 @@ def check_answer(answer_user, answer, i, game_count):
     return i
 
 
-def finish_game(i, game_count, name):
+def is_finish_game(i, game_count, name):
     if i == game_count:
         print(f'Congratulations, {name}!')
     else:
