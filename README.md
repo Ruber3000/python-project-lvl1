@@ -19,30 +19,22 @@ https://asciinema.org/a/ZDbfvOOhaJk9EmhlLp1mjMI9j
 # link to asciinema brain-games step 9 // prime
 https://asciinema.org/a/30MVu2gNwThkuBLBLd0v5CGKG
 
+можно дополнить README.md чтобы он содержал инструкции по установке, запуску, описание команд в Makefile.
 
-# Instructions #
+# Instruction
+For install Brain Games You need:
+- clone Files of Games from https://github.com/Ruber3000/python-project-lvl1.git
+and install them to You Computer
+- running at least Python 3.6.0
+- pip3 install asciiracer
 
-# Installation
-The game does not require installation. It is launched in the terminal
-Make sure you are running at least Python 3.6.0
+# Name of game              Start Game (run in Terminal)
+even or odd number          brain-even
 
-Install using pip:
+operations on numbers       brain-calc
 
-pip3 install asciiracer
+greatest common divisor     brain-gcd
 
-or clone the repository and install manually:
+prime or composite number   brain-prime
 
-$ git clone https://github.com/UpGado/ascii_racer.git
-$ cd ascii_racer && python3 setup.py install
-
-
-# Start Game              Name of game
-brain-even              even or odd number
-
-brain-calc              operations on numbers
-
-brain-gcd               greatest common divisor
-
-brain-prime             prime or composite number
-
-brain-progression       missing number
+issing number               brain-progression

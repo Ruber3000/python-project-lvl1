@@ -2,11 +2,8 @@
 import prompt
 
 
-def word_welcome():
-    print('Welcome to the Brain Games!')
-
-
 def ask_name():
+    print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? \n')
     print(f'Hello, {name}!')
     return name
@@ -18,7 +15,7 @@ def answer_from_user():
     return answer_user
 
 
-def is_check_answer(answer_user, answer, i, game_count):
+def is_check_answer(answer_user, answer, i, GAME_COUNT):
     if str(answer_user) == str(answer):
         print('Correct!\n')
         i += 1
@@ -26,12 +23,12 @@ def is_check_answer(answer_user, answer, i, game_count):
         print(
             f'\n{answer_user} is wrong answer ;(. '
             f'Correct answer was {answer}.')
-        i = game_count + 1
+        i = GAME_COUNT + 1
     return i
 
 
-def is_finish_game(i, game_count, name):
-    if i == game_count:
+def is_finish_game(i, GAME_COUNT, name):
+    if i == GAME_COUNT:
         print(f'Congratulations, {name}!')
     else:
         print(f'Let\'s try again, {name}!')
