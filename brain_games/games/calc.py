@@ -1,7 +1,11 @@
 import random
+from brain_games.game_function.game_logic import welcom_user
 from brain_games.game_function.game_logic import ask_name
 from brain_games.game_function.game_logic import comparison
 from brain_games.game_function.game_logic import is_finish_game
+
+
+welcom_user()
 
 
 def game_calc_free():
