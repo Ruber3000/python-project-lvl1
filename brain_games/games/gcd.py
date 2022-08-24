@@ -1,8 +1,8 @@
 import random
 import math
-from brain_games.game_function.game_logics import ask_name
-from brain_games.game_function.game_logics import comparison
-from brain_games.game_function.game_logics import is_finish_game
+from brain_games.game_function.game_logic import ask_name
+from brain_games.game_function.game_logic import comparison
+from brain_games.game_function.game_logic import is_finish_game
 
 
 def nod_function():
