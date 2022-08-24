@@ -1,4 +1,4 @@
-# tests
+# functions for Tests
 
 
 def is_prime_test(num):

@@ -1,6 +1,6 @@
 import random
-from brain_games.game_function.game_logics import answer_from_user, ask_name
-from brain_games.game_function.game_logics import is_check_answer
+from brain_games.game_function.game_logics import ask_name
+from brain_games.game_function.game_logics import comparison
 from brain_games.game_function.game_logics import is_finish_game
 
 
@@ -15,6 +15,5 @@ def even_find():
         num = random.randrange(MIN_NUMBER, MAX_NUMBER)
         answer = 'yes' if num % 2 == 0 else 'no'
         print(f'Question: {num}')
-        answer_user = answer_from_user()
-        i = is_check_answer(answer_user, answer, i, GAME_COUNT)
+        i = comparison(answer, i, GAME_COUNT)
     is_finish_game(i, GAME_COUNT, name)

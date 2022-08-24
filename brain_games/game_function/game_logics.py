@@ -1,4 +1,4 @@
-# common function
+# functions of game's logic
 import prompt
 
 
@@ -9,13 +9,9 @@ def ask_name():
     return name
 
 
-def answer_from_user():
+def comparison(answer, i, GAME_COUNT):
     answer_user = prompt.string('Your answer: ')
     answer_user = answer_user.strip().lower()
-    return answer_user
-
-
-def is_check_answer(answer_user, answer, i, GAME_COUNT):
     if str(answer_user) == str(answer):
         print('Correct!\n')
         i += 1
