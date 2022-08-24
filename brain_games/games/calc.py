@@ -5,10 +5,8 @@ from brain_games.game_function.game_logic import comparison
 from brain_games.game_function.game_logic import is_finish_game
 
 
-welcom_user()
-
-
 def game_calc_free():
+    welcom_user()
     name = ask_name()
     print('\nWhat is the result of the expression?')
     GAME_COUNT = 3

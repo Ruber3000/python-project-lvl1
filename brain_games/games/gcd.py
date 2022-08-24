@@ -6,10 +6,8 @@ from brain_games.game_function.game_logic import comparison
 from brain_games.game_function.game_logic import is_finish_game
 
 
-welcom_user()
-
-
 def nod_function():
+    welcom_user()
     name = ask_name()
     print('\nFind the greatest common divisor of given numbers.')
     GAME_COUNT = 3

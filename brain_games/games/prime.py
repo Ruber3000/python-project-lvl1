@@ -6,10 +6,8 @@ from brain_games.game_function.game_logic import is_finish_game
 from brain_games.game_function.tests import is_prime_test
 
 
-welcom_user()
-
-
 def prime_try_find():
+    welcom_user()
     name = ask_name()
     print(
         '\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".')

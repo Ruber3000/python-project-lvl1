@@ -5,10 +5,8 @@ from brain_games.game_function.game_logic import comparison
 from brain_games.game_function.game_logic import is_finish_game
 
 
-welcom_user()
-
-
 def even_find():
+    welcom_user()
     name = ask_name()
     print('\nAnswer \"yes\" if the number is even, otherwise answer \"no\".')
     GAME_COUNT = 3
