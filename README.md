@@ -28,13 +28,13 @@ and install them to You Computer
 - running at least Python 3.6.0
 - pip3 install asciiracer
 
-# Name of game              Start Game (run in Terminal)
-even or odd number          brain-even
+# Name of game               Start Game (run in Terminal)
+even or odd number           brain-even
 
-operations on numbers       brain-calc
+operations on numbers        brain-calc
 
-greatest common divisor     brain-gcd
+greatest common divisor      brain-gcd
 
-prime or composite number   brain-prime
+prime or composite number    brain-prime
 
-issing number               brain-progression
+issing number                brain-progression
