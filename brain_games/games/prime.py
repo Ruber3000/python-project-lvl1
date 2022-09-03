@@ -1,9 +1,9 @@
 import random
-from brain_games.game_function.game_logic import welcom_user
-from brain_games.game_function.game_logic import ask_name
-from brain_games.game_function.game_logic import comparison
-from brain_games.game_function.game_logic import is_finish_game
-from brain_games.game_function.tests import is_prime_test
+from brain_games.game_logic import welcom_user
+from brain_games.game_logic import ask_name
+from brain_games.game_logic import comparison
+from brain_games.game_logic import is_finish_game
+from brain_games.tests.tests import is_prime_test
 
 
 def prime_try_find():
