@@ -4,18 +4,19 @@ from brain_games.game_logic import ask_name
 from brain_games.game_logic import comparison
 from brain_games.game_logic import is_finish_game
 
+GAME_COUNT = 3
+MIN_FIRST_NUMBER = 2
+MAX_FIRST_NUMBER = 10
+MIN_STEP = 3
+MAX_STEP = 8
+MIN_LENGHT_LIST = 6
+MAX_LENGHT_LIST = 10
+
 
 def progress_range():
     welcom_user()
     name = ask_name()
     print('\nWhat number is missing in the progression?')
-    GAME_COUNT = 3
-    MIN_FIRST_NUMBER = 2
-    MAX_FIRST_NUMBER = 10
-    MIN_STEP = 3
-    MAX_STEP = 8
-    MIN_LENGHT_LIST = 6
-    MAX_LENGHT_LIST = 10
     i = 0
     while i < GAME_COUNT:
         num_start = random.randrange(MIN_FIRST_NUMBER, MAX_FIRST_NUMBER)

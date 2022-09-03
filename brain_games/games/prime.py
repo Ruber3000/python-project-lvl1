@@ -5,15 +5,16 @@ from brain_games.game_logic import comparison
 from brain_games.game_logic import is_finish_game
 from brain_games.tests.tests import is_prime_test
 
+GAME_COUNT = 3
+MIN_NUMBER = 1
+MAX_NUMBER = 100
+
 
 def prime_try_find():
     welcom_user()
     name = ask_name()
     print(
         '\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".')
-    GAME_COUNT = 3
-    MIN_NUMBER = 1
-    MAX_NUMBER = 100
     i = 0
     while i < GAME_COUNT:
         num = random.randrange(MIN_NUMBER, MAX_NUMBER)

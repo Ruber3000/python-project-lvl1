@@ -4,16 +4,17 @@ from brain_games.game_logic import ask_name
 from brain_games.game_logic import comparison
 from brain_games.game_logic import is_finish_game
 
+GAME_COUNT = 3
+MIN_FIRST_NUMBER = 1
+MAX_FIRST_NUMBER = 100
+MIN_SECOND_NUMBER = 1
+MAX_SECOND_NUMBER = 10
+
 
 def game_calc_free():
     welcom_user()
     name = ask_name()
     print('\nWhat is the result of the expression?')
-    GAME_COUNT = 3
-    MIN_FIRST_NUMBER = 1
-    MAX_FIRST_NUMBER = 100
-    MIN_SECOND_NUMBER = 1
-    MAX_SECOND_NUMBER = 10
     math_operation = ['+', '-', '*']
     i = 0
     while i < GAME_COUNT:
