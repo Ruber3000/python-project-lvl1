@@ -1,6 +1,4 @@
 import random
-from brain_games.game_logic import welcom_user
-from brain_games.game_logic import ask_name
 from brain_games.game_logic import comparison
 from brain_games.game_logic import is_finish_game
 
@@ -14,8 +12,6 @@ MAX_LENGHT_LIST = 10
 
 
 def progress_range():
-    welcom_user()
-    name = ask_name()
     print('\nWhat number is missing in the progression?')
     i = 0
     while i < GAME_COUNT:
@@ -31,4 +27,4 @@ def progress_range():
         list_num_hide = list_num_hide1 + ' .. ' + list_num_hide3
         print(f'Question: {list_num_hide}')
         i = comparison(answer, i, GAME_COUNT)
-    is_finish_game(i, GAME_COUNT, name)
+    is_finish_game(i, GAME_COUNT)

@@ -2,14 +2,14 @@
 import prompt
 
 
-def welcom_user():
+def run_game():
     print('Welcome to the Brain Games!')
-
-
-def ask_name():
     name = prompt.string('May I have your name? \n')
-    print(f'Hello, {name}!')
     return name
+
+
+name = run_game()
+print(f'Hello, {name}!')
 
 
 def comparison(answer, i, GAME_COUNT):
@@ -26,7 +26,7 @@ def comparison(answer, i, GAME_COUNT):
     return i
 
 
-def is_finish_game(i, GAME_COUNT, name):
+def is_finish_game(i, GAME_COUNT):
     if i == GAME_COUNT:
         print(f'Congratulations, {name}!')
     else:

@@ -1,6 +1,4 @@
 import random
-from brain_games.game_logic import welcom_user
-from brain_games.game_logic import ask_name
 from brain_games.game_logic import comparison
 from brain_games.game_logic import is_finish_game
 
@@ -10,8 +8,6 @@ MAX_NUMBER = 100
 
 
 def even_find():
-    welcom_user()
-    name = ask_name()
     print('\nAnswer \"yes\" if the number is even, otherwise answer \"no\".')
     i = 0
     while i < GAME_COUNT:
@@ -19,4 +15,4 @@ def even_find():
         answer = 'yes' if num % 2 == 0 else 'no'
         print(f'Question: {num}')
         i = comparison(answer, i, GAME_COUNT)
-    is_finish_game(i, GAME_COUNT, name)
+    is_finish_game(i, GAME_COUNT)

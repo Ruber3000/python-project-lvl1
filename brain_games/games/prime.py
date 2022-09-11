@@ -1,6 +1,4 @@
 import random
-from brain_games.game_logic import welcom_user
-from brain_games.game_logic import ask_name
 from brain_games.game_logic import comparison
 from brain_games.game_logic import is_finish_game
 from brain_games.tests.tests import is_prime_test
@@ -11,8 +9,6 @@ MAX_NUMBER = 100
 
 
 def prime_try_find():
-    welcom_user()
-    name = ask_name()
     print(
         '\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".')
     i = 0
@@ -22,4 +18,4 @@ def prime_try_find():
         answer = 'yes' if answer_test is True else 'no'
         print(f'Question: {num}')
         i = comparison(answer, i, GAME_COUNT)
-    is_finish_game(i, GAME_COUNT, name)
+    is_finish_game(i, GAME_COUNT)

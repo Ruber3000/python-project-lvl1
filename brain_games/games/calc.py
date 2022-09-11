@@ -1,6 +1,4 @@
 import random
-from brain_games.game_logic import welcom_user
-from brain_games.game_logic import ask_name
 from brain_games.game_logic import comparison
 from brain_games.game_logic import is_finish_game
 
@@ -12,8 +10,6 @@ MAX_SECOND_NUMBER = 10
 
 
 def game_calc_free():
-    welcom_user()
-    name = ask_name()
     print('\nWhat is the result of the expression?')
     math_operation = ['+', '-', '*']
     i = 0
@@ -29,4 +25,4 @@ def game_calc_free():
             answer = num1 * num2
         print(f'Question: {num1} {math_operation_choice} {num2}')
         i = comparison(answer, i, GAME_COUNT)
-    is_finish_game(i, GAME_COUNT, name)
+    is_finish_game(i, GAME_COUNT)
